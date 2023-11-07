@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://5qw5i2lspaos"]
+
+[ext_resource type="Texture2D" uid="uid://hlx6dkesiit3" path="res://arts/textures/Purple Marble_Texture.png" id="1_3qc3l"]
+[ext_resource type="Script" path="res://scripts/PlayerController.gd" id="1_7rqku"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_50y5c"]
+friction = 0.7
+bounce = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ycsy1"]
+albedo_texture = ExtResource("1_3qc3l")
+roughness = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_hq7mg"]
+material = SubResource("StandardMaterial3D_ycsy1")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_e6ylk"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_hcswi"]
+radius = 0.51
+
+[node name="Player" type="RigidBody3D"]
+mass = 2.0
+physics_material_override = SubResource("PhysicsMaterial_50y5c")
+angular_damp = 1.0
+script = ExtResource("1_7rqku")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_hq7mg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_e6ylk")
+
+[node name="CameraRig" type="Node3D" parent="."]
+top_level = true
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig"]
+transform = Transform3D(-4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -3.5, 2.8, 0)
+current = true
+
+[node name="FloorCast" type="RayCast3D" parent="."]
+top_level = true
+target_position = Vector3(0, -0.8, 0)
+debug_shape_custom_color = Color(0.85098, 0.239216, 0, 1)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_hcswi")
