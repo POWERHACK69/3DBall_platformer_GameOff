@@ -1,7 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://5qw5i2lspaos"]
+[gd_scene load_steps=11 format=3 uid="uid://5qw5i2lspaos"]
 
 [ext_resource type="Script" path="res://scripts/PlayerController.gd" id="1_7rqku"]
 [ext_resource type="Texture2D" uid="uid://bb662v1220y1s" path="res://arts/textures/BasketballColor_upscaled2 (2)_004.jpg" id="2_6whxq"]
+[ext_resource type="AudioStream" uid="uid://gmj1a1rvearh" path="res://sounds/sfx/bounce.wav" id="3_2cme5"]
+[ext_resource type="AudioStream" uid="uid://vmbj5irhp707" path="res://sounds/sfx/roll.wav" id="4_raqlu"]
+[ext_resource type="AudioStream" uid="uid://br4hjv2b1hplq" path="res://sounds/sfx/jump.wav" id="5_t0lgm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_50y5c"]
 friction = 0.7
@@ -19,7 +22,7 @@ material = SubResource("StandardMaterial3D_ycsy1")
 [sub_resource type="SphereShape3D" id="SphereShape3D_hcswi"]
 radius = 0.51
 
-[node name="Player" type="RigidBody3D"]
+[node name="Player" type="RigidBody3D" groups=["player"]]
 mass = 2.0
 physics_material_override = SubResource("PhysicsMaterial_50y5c")
 angular_damp = 1.0
@@ -41,10 +44,21 @@ current = true
 
 [node name="FloorCast" type="RayCast3D" parent="."]
 top_level = true
-target_position = Vector3(0, -0.8, 0)
+target_position = Vector3(0, -0.6, 0)
 debug_shape_custom_color = Color(0.85098, 0.239216, 0, 1)
 
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("SphereShape3D_hcswi")
+
+[node name="SoundNode" type="Node3D" parent="."]
+
+[node name="bounce" type="AudioStreamPlayer" parent="SoundNode"]
+stream = ExtResource("3_2cme5")
+
+[node name="roll" type="AudioStreamPlayer" parent="SoundNode"]
+stream = ExtResource("4_raqlu")
+
+[node name="jump" type="AudioStreamPlayer" parent="SoundNode"]
+stream = ExtResource("5_t0lgm")

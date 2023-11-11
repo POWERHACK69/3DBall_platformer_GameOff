@@ -21,6 +21,7 @@ var lives
 
 var roll_force
 var jump_impulse
+var just_jumped = true
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -43,9 +44,17 @@ func player_movements(tick) -> void:
 	angular_velocity.x += move_direction.x * roll_force * tick
 	angular_velocity.z += move_direction.z * roll_force * tick
 	
+#	print("angular velocity x "+str(angular_velocity.x)+"\n angular velocity z "+str(angular_velocity.z))
+#	if is_on_floor and (angular_velocity.x !=round(0) or angular_velocity.z !=round(0)):
+#		if $SoundNode/roll.playing == false:
+#			$SoundNode/roll.play()
+#	else:
+#		$SoundNode/roll.playing = false
+	
 	if Input.is_action_pressed("brake") and is_on_floor:
 		angular_velocity = Vector3.ZERO
 	if Input.is_action_just_pressed("jump") and is_on_floor:
+		$SoundNode/jump.play()
 		apply_central_impulse(Vector3.UP * jump_impulse)
 		
 	if Input.is_action_just_pressed("grow"):
@@ -54,6 +63,12 @@ func player_movements(tick) -> void:
 	if Input.is_action_just_pressed("shrink"):
 		if ball_size ==1:
 			ball_size = 0
+	
+	if !is_on_floor:
+		just_jumped = true
+	if is_on_floor and just_jumped:
+		$SoundNode/bounce.play()
+		just_jumped = false
 	
 func camera_movements():
 	if Input.is_action_pressed("camera_up"):
@@ -101,3 +116,8 @@ func _input(event) -> void:
 		camera.rotate_z(-event.relative.y * mouse_sensitivity)
 	camera.rotation.z = clamp(camera.rotation.z, -PI/3.5, PI/4.5)
 
+
+
+#func _on_area_3d_area_entered(area: Area3D) -> void:
+#	if area.is_in_group("ring"):
+#		area.collect()

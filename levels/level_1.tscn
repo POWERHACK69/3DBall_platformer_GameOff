@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1bq6bamv3rpw"]
 
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_h6u38"]
 [ext_resource type="PackedScene" uid="uid://5qw5i2lspaos" path="res://scenes/Player.tscn" id="2_53236"]
 [ext_resource type="MeshLibrary" uid="uid://bmye6brao22lk" path="res://meshlib/Platform_mesh.tres" id="3_cp5sm"]
+[ext_resource type="AudioStream" uid="uid://bu4hoqhcy2c3e" path="res://sounds/music/caves-of-dawn-pixabay.ogg" id="3_mc4c3"]
+[ext_resource type="PackedScene" uid="uid://cqxhhy3oqxqd3" path="res://scenes/interactables/ring_small.tscn" id="5_40j6s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bgyfl"]
+size = Vector3(500, 1, 500)
 
 [node name="Level1" type="Node3D"]
+script = ExtResource("1_h6u38")
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("3_cp5sm")
@@ -19,3 +25,26 @@ shadow_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("2_53236")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.08027, 2.02827, 0)
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mc4c3")
+autoplay = true
+
+[node name="DeathArea" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeathArea"]
+shape = SubResource("BoxShape3D_bgyfl")
+
+[node name="Rings" type="Node3D" parent="."]
+
+[node name="RingSmall" parent="Rings" instance=ExtResource("5_40j6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.589371, 2, 0)
+
+[node name="RingSmall2" parent="Rings" instance=ExtResource("5_40j6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.79295, 2, 0)
+
+[node name="RingSmall3" parent="Rings" instance=ExtResource("5_40j6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.33378, 2.31911, -2.38419e-07)
+
+[connection signal="body_entered" from="DeathArea" to="." method="_on_death_area_body_entered"]
