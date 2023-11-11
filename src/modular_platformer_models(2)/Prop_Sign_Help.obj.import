@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dd1icgs87sylu"
+path="res://.godot/imported/Prop_Sign_Help.obj-03f35745bbe872db9215e7e9029ce38c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Sign_Help.obj-03f35745bbe872db9215e7e9029ce38c.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Sign_Help.obj"
+dest_files=["res://.godot/imported/Prop_Sign_Help.obj-03f35745bbe872db9215e7e9029ce38c.mesh", "res://.godot/imported/Prop_Sign_Help.obj-03f35745bbe872db9215e7e9029ce38c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

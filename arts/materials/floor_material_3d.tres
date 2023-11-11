@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://c3pl6bl2r70m6"]
+
+[ext_resource type="Texture2D" uid="uid://cinbwykslk5nt" path="res://arts/textures/wall textures/Stylized_Stone_Wall_001_SD/Stylized_Stone_Wall_001_basecolor.jpg" id="1_cp2p7"]
+[ext_resource type="Texture2D" uid="uid://1mfmmwlgkhiq" path="res://arts/textures/wall textures/Stylized_Stone_Wall_001_SD/Stylized_Stone_Wall_001_ambientOcclusion.jpg" id="2_vymqi"]
+[ext_resource type="Texture2D" uid="uid://bhf142hecortb" path="res://arts/textures/wall textures/Stylized_Stone_Wall_001_SD/Stylized_Stone_Wall_001_height.png" id="3_835xp"]
+[ext_resource type="Texture2D" uid="uid://cvxo1tx62wr4y" path="res://arts/textures/wall textures/Stylized_Stone_Wall_001_SD/Stylized_Stone_Wall_001_normal.jpg" id="4_8ln1o"]
+[ext_resource type="Texture2D" uid="uid://cpvci3gd2hev8" path="res://arts/textures/wall textures/Stylized_Stone_Wall_001_SD/Stylized_Stone_Wall_001_roughness.jpg" id="5_iag2v"]
+
+[resource]
+albedo_texture = ExtResource("1_cp2p7")
+roughness_texture = ExtResource("5_iag2v")
+normal_enabled = true
+normal_texture = ExtResource("4_8ln1o")
+ao_enabled = true
+ao_texture = ExtResource("2_vymqi")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_835xp")
+uv1_triplanar = true

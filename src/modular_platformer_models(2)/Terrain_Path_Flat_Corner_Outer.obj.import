@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cw8m38gncvgn2"
+path="res://.godot/imported/Terrain_Path_Flat_Corner_Outer.obj-1c786e36c890089202e54051feb34e87.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Terrain_Path_Flat_Corner_Outer.obj-1c786e36c890089202e54051feb34e87.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Terrain_Path_Flat_Corner_Outer.obj"
+dest_files=["res://.godot/imported/Terrain_Path_Flat_Corner_Outer.obj-1c786e36c890089202e54051feb34e87.mesh", "res://.godot/imported/Terrain_Path_Flat_Corner_Outer.obj-1c786e36c890089202e54051feb34e87.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

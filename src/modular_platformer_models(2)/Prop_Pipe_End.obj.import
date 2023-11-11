@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dc1oogqiia78y"
+path="res://.godot/imported/Prop_Pipe_End.obj-9a41b7da449e6605c1efce7ec17a334e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Pipe_End.obj-9a41b7da449e6605c1efce7ec17a334e.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Pipe_End.obj"
+dest_files=["res://.godot/imported/Prop_Pipe_End.obj-9a41b7da449e6605c1efce7ec17a334e.mesh", "res://.godot/imported/Prop_Pipe_End.obj-9a41b7da449e6605c1efce7ec17a334e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlsa0lqh5yerm"
+path="res://.godot/imported/Prop_Tree_5.obj-dbd9b75bb32886db7f1ffb834ece29dd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Tree_5.obj-dbd9b75bb32886db7f1ffb834ece29dd.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Tree_5.obj"
+dest_files=["res://.godot/imported/Prop_Tree_5.obj-dbd9b75bb32886db7f1ffb834ece29dd.mesh", "res://.godot/imported/Prop_Tree_5.obj-dbd9b75bb32886db7f1ffb834ece29dd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhoeluduesg02"
+path="res://.godot/imported/Terrain_Escarpment_Top_Hill.obj-40341dbf34295b361d261db91f9a3735.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Terrain_Escarpment_Top_Hill.obj-40341dbf34295b361d261db91f9a3735.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Terrain_Escarpment_Top_Hill.obj"
+dest_files=["res://.godot/imported/Terrain_Escarpment_Top_Hill.obj-40341dbf34295b361d261db91f9a3735.mesh", "res://.godot/imported/Terrain_Escarpment_Top_Hill.obj-40341dbf34295b361d261db91f9a3735.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

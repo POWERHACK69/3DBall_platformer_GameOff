@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://x28mrd4c47qi"
+path="res://.godot/imported/Prop_Pipe_Elbow.obj-71a72dfed0632b117fc4963baf9ee199.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Pipe_Elbow.obj-71a72dfed0632b117fc4963baf9ee199.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Pipe_Elbow.obj"
+dest_files=["res://.godot/imported/Prop_Pipe_Elbow.obj-71a72dfed0632b117fc4963baf9ee199.mesh", "res://.godot/imported/Prop_Pipe_Elbow.obj-71a72dfed0632b117fc4963baf9ee199.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

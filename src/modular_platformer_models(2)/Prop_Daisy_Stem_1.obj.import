@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8e8tu8lrobnb"
+path="res://.godot/imported/Prop_Daisy_Stem_1.obj-e41475ad1705141905469481613b5356.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Daisy_Stem_1.obj-e41475ad1705141905469481613b5356.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Daisy_Stem_1.obj"
+dest_files=["res://.godot/imported/Prop_Daisy_Stem_1.obj-e41475ad1705141905469481613b5356.mesh", "res://.godot/imported/Prop_Daisy_Stem_1.obj-e41475ad1705141905469481613b5356.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

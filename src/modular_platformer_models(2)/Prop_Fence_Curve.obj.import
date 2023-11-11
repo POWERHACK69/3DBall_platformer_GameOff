@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cyvs81tofltkp"
+path="res://.godot/imported/Prop_Fence_Curve.obj-e5e406df9aa6b7d63a870ca3f077b336.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Fence_Curve.obj-e5e406df9aa6b7d63a870ca3f077b336.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Fence_Curve.obj"
+dest_files=["res://.godot/imported/Prop_Fence_Curve.obj-e5e406df9aa6b7d63a870ca3f077b336.mesh", "res://.godot/imported/Prop_Fence_Curve.obj-e5e406df9aa6b7d63a870ca3f077b336.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

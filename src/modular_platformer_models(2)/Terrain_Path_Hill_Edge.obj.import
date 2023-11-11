@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://didxf35jgstw6"
+path="res://.godot/imported/Terrain_Path_Hill_Edge.obj-a2295e67cbd66de747aef2f3c05cf219.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Terrain_Path_Hill_Edge.obj-a2295e67cbd66de747aef2f3c05cf219.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Terrain_Path_Hill_Edge.obj"
+dest_files=["res://.godot/imported/Terrain_Path_Hill_Edge.obj-a2295e67cbd66de747aef2f3c05cf219.mesh", "res://.godot/imported/Terrain_Path_Hill_Edge.obj-a2295e67cbd66de747aef2f3c05cf219.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

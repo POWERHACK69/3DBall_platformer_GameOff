@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqxhhy3oqxqd3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_207hm"]
+albedo_color = Color(1, 0.87451, 0.133333, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s6d40"]
+material = SubResource("StandardMaterial3D_207hm")
+size = Vector3(1.3, 1.2, 0.4)
+
+[sub_resource type="SphereMesh" id="SphereMesh_113jd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0x563"]
+
+[node name="RingSmall" type="Node3D"]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+mesh = SubResource("BoxMesh_s6d40")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGMesh3D"]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
+operation = 2
+mesh = SubResource("SphereMesh_113jd")
+
+[node name="Area3D" type="Area3D" parent="CSGMesh3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGMesh3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.2, 0, 0, 0)
+shape = SubResource("SphereShape3D_0x563")

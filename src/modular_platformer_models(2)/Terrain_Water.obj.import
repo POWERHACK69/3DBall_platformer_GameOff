@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0stkjno4deqr"
+path="res://.godot/imported/Terrain_Water.obj-88e19e582acb70e502acaff13ef1e64c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Terrain_Water.obj-88e19e582acb70e502acaff13ef1e64c.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Terrain_Water.obj"
+dest_files=["res://.godot/imported/Terrain_Water.obj-88e19e582acb70e502acaff13ef1e64c.mesh", "res://.godot/imported/Terrain_Water.obj-88e19e582acb70e502acaff13ef1e64c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

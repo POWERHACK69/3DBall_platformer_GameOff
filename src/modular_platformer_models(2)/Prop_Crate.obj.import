@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bfpcnbtnldaoa"
+path="res://.godot/imported/Prop_Crate.obj-7c9603fa00b74903ab84c29e6165c250.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Crate.obj-7c9603fa00b74903ab84c29e6165c250.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Crate.obj"
+dest_files=["res://.godot/imported/Prop_Crate.obj-7c9603fa00b74903ab84c29e6165c250.mesh", "res://.godot/imported/Prop_Crate.obj-7c9603fa00b74903ab84c29e6165c250.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

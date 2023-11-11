@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cv42frox1e5fl"]
+[gd_scene load_steps=7 format=3 uid="uid://cv42frox1e5fl"]
 
+[ext_resource type="Texture2D" uid="uid://dx3ttfs0n4162" path="res://arts/ch01_island_tree_rootsenergy_dif.png" id="1_bn0lx"]
 [ext_resource type="PackedScene" uid="uid://5qw5i2lspaos" path="res://scenes/Player.tscn" id="1_rfej4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_evam2"]
@@ -15,6 +16,10 @@ sky = SubResource("Sky_up8f3")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y1dvn"]
+albedo_texture = ExtResource("1_bn0lx")
+uv1_triplanar = true
+
 [node name="protolevel" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -26,7 +31,8 @@ environment = SubResource("Environment_i5p1q")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
-size = Vector3(50, 1, 30)
+size = Vector3(100, 1, 50)
+material = SubResource("StandardMaterial3D_y1dvn")
 
 [node name="Player" parent="." instance=ExtResource("1_rfej4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

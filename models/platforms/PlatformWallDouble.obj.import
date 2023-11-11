@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://coaluxklfaadx"
+path="res://.godot/imported/PlatformWallDouble.obj-262d62b603becd2ca93c97c6499c7eb1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/PlatformWallDouble.obj-262d62b603becd2ca93c97c6499c7eb1.mesh"]
+
+source_file="res://models/platforms/PlatformWallDouble.obj"
+dest_files=["res://.godot/imported/PlatformWallDouble.obj-262d62b603becd2ca93c97c6499c7eb1.mesh", "res://.godot/imported/PlatformWallDouble.obj-262d62b603becd2ca93c97c6499c7eb1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

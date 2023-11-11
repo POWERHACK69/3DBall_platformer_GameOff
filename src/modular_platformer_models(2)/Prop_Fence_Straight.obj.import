@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://sbrck65uvsm8"
+path="res://.godot/imported/Prop_Fence_Straight.obj-a1c12b413c2ea52f9a779fd4847e2503.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Fence_Straight.obj-a1c12b413c2ea52f9a779fd4847e2503.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Fence_Straight.obj"
+dest_files=["res://.godot/imported/Prop_Fence_Straight.obj-a1c12b413c2ea52f9a779fd4847e2503.mesh", "res://.godot/imported/Prop_Fence_Straight.obj-a1c12b413c2ea52f9a779fd4847e2503.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

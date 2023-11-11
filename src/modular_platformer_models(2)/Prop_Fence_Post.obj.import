@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c1xjb5sh05w0c"
+path="res://.godot/imported/Prop_Fence_Post.obj-4b36556ea6f48923aa963e83e7fccf59.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Fence_Post.obj-4b36556ea6f48923aa963e83e7fccf59.mesh"]
+
+source_file="res://src/modular_platformer_models(2)/Prop_Fence_Post.obj"
+dest_files=["res://.godot/imported/Prop_Fence_Post.obj-4b36556ea6f48923aa963e83e7fccf59.mesh", "res://.godot/imported/Prop_Fence_Post.obj-4b36556ea6f48923aa963e83e7fccf59.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
